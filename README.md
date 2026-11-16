@@ -16,7 +16,7 @@ Python 3.9+ and `pip install -r requirements.txt` (numpy, pandas, scipy, scikit-
 ```
 python run_all.py --list        # steps and approximate run times
 python run_all.py --smoke       # tiny sizes, checks that the whole chain runs (results are NOT those of the paper)
-python run_all.py               # full run (about 2 h on one core); logs in outputs/logs/, tables and figures in paper/
+python run_all.py               # full run (about 2 h on one core); logs in outputs/logs/, tables and figures in outputs/tables/ and outputs/figs/
 python run_all.py --only data stats mlp tables      # selected steps
 ```
 
@@ -28,7 +28,7 @@ python run_all.py --only data stats mlp tables      # selected steps
 | dopt | `optdesign.py` | D-optimal frequency sets (`outputs/work/dopt_sets.json`), library-start NLLS | Sec. III-C, IV-C |
 | stats | `stats_design.py` | per-spectrum predictions and paired statistics | Tables III, IV, VII |
 | mlp | `stats_mlp.py` | MLP versus SVR | Sec. V-D |
-| tables | `make_tables.py`, `make_figs2.py` | `paper/auto/*.tex`, Fig. 3, graphical abstract | Tables III, IV, VII, Fig. 3 |
+| tables | `make_tables.py`, `make_figs2.py` | `outputs/tables/*.tex`, Fig. 3, graphical abstract | Tables III, IV, VII, Fig. 3 |
 | known | `known_thickness.py` | known-thickness retrieval | Sec. IV-B |
 | thick | `nothick.py`, `hybrid.py` | unknown thickness 10-50 mm, hybrid NLLS | Table II |
 | imperf | `nonideal.py` | unmodeled measurement imperfections | Table V |
