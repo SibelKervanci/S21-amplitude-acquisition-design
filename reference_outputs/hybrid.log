@@ -1,0 +1,2 @@
+HİBRİT: kalınlık başlangıcı = SVR tahmini, 3 başlangıç ε′= 3.2%  σ_eff= 2.5%  >%10 hata= 13%  d RMSE= 3.0 mm    25 ms
+NLLS standart: kalınlık 3 başlangıç × 3 = 9 başlangıç ε′= 3.2%  σ_eff= 2.5%  >%10 hata= 13%  d RMSE= 3.0 mm   101 ms

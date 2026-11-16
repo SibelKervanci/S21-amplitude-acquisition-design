@@ -1,0 +1,34 @@
+SVR eğitim 15s (17.000 sentetik spektrum, 12 hedef)
+
+GERÇEK insan dokusu (14 doku, 112 örnek) -> S21 -> sentetik-eğitimli SVR -> ε′, σ_eff   (medyan mutlak yüzde hata)
+f      0.5  1.0  2.0  3.0  4.0  6.0
+q                                  
+ε′     1.1  1.6  1.3  1.2  1.3  1.4
+σ_eff  0.9  1.0  1.1  1.3  0.7  1.9
+
+Yalnızca yumuşak organlar (Heart, KidneyCortex, Spleen, Liver, SkeletalMuscle, BrainGrey):
+f      0.5  1.0  2.0  3.0  4.0  6.0
+q                                  
+ε′     0.8  1.2  1.3  1.1  1.2  1.2
+σ_eff  0.7  0.9  0.8  1.0  0.6  1.8
+
+Doku başına medyan yüzde hata (12 hedef ort.):
+tissue
+SkeletalMuscle        0.6
+KidneyMedula          0.7
+SalivaryGland         0.8
+Pancreas              0.9
+Spleen                0.9
+Tongue                0.9
+KidneyCortex          1.1
+Liver                 1.1
+Heart                 1.3
+Lung                  1.8
+Thyroid               1.8
+BrainGreyMatter       2.1
+BrainWhiteMatter      2.9
+Fat                 325.0
+
+Birleşik R² (tüm dokular birlikte; doku-arası varyans yüksek olduğu için iyimser) ve yumuşak-organ-içi R²:
+  ε′     birleşik R²=0.775   yumuşak-organ-içi R²=0.958
+  σ_eff  birleşik R²=0.896   yumuşak-organ-içi R²=0.999

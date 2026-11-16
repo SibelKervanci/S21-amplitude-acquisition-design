@@ -1,0 +1,16 @@
+hazır; ideal medyan |S21| 6GHz=0.0090  kusurlu=0.0095
+SVR naif (ideal veriyle) 3s
+SVR rastgeleleştirilmiş (kusurlu veriyle) 4s
+
+TEST 1: İDEAL ölçüm (modelle tam uyumlu)
+  SVR naif (ideal veriyle eğitilmiş)           ε′=  1.1%  σ_eff=  1.0%  >%10 hata=  3%
+  SVR rastgeleleştirilmiş (kusurlu veriyle eğitilmiş) ε′=  1.6%  σ_eff=  1.0%  >%10 hata=  2%
+  NLLS, kalınlık 30 mm sabit                   ε′=  1.0%  σ_eff=  0.9%  >%10 hata=  0%    22 ms
+  NLLS, kalınlık serbest                       ε′=  2.9%  σ_eff=  2.3%  >%10 hata=  8%    24 ms
+
+TEST 2: KUSURLU ölçüm (izleme hatası + sızıntı + kalınlık ±1 mm; NLLS'in bilmediği)
+  SVR naif (ideal veriyle eğitilmiş)           ε′=  3.5%  σ_eff=  3.4%  >%10 hata=  4%
+  SVR rastgeleleştirilmiş (kusurlu veriyle eğitilmiş) ε′=  2.7%  σ_eff=  2.7%  >%10 hata=  4%
+  NLLS, kalınlık 30 mm sabit                   ε′=  3.4%  σ_eff=  3.1%  >%10 hata=  1%    23 ms
+  NLLS, kalınlık serbest                       ε′=  5.2%  σ_eff=  5.4%  >%10 hata= 17%    24 ms
+BİTTİ

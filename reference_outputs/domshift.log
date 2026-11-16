@@ -1,0 +1,22 @@
+yüklendi 4s (17000, 111) (3400, 111)
+
+SVM (ham S21, TAM eğitim seti, seed42)  hold-out test acc = 0.8097 | 4-kutuplu doğrulama acc = 0.2394
+
+Doku başına 4-kutuplu doğruluk ve en sık tahmin edilen sınıf:
+  Blood                acc= 1.00  -> Blood:1.00
+  Bone_cancellous      acc= 0.95  -> Bone_cancellous:0.95, Lens_cortex:0.04
+  Bone_cortical        acc= 0.12  -> Bone_cancellous:0.88, Bone_cortical:0.12
+  Brain_grey           acc= 0.00  -> Blood:1.00
+  Brain_white          acc= 0.00  -> Blood:0.51, Lens_cortex:0.49
+  Fat_infiltrated      acc= 1.00  -> Fat_infiltrated:1.00
+  Fat_not_infiltrated  acc= 1.00  -> Fat_not_infiltrated:1.00
+  Heart                acc= 0.00  -> Blood:1.00
+  Kidney               acc= 0.00  -> Blood:1.00
+  Lens_cortex          acc= 0.00  -> Blood:1.00
+  Liver                acc= 0.00  -> Blood:0.98, Lens_cortex:0.01
+  Lung_inflated        acc= 0.00  -> Bone_cancellous:0.40, Blood:0.31
+  Muscle               acc= 0.00  -> Blood:1.00
+  Skin_dry             acc= 0.00  -> Blood:0.95, Lens_cortex:0.04
+  Skin_wet             acc= 0.00  -> Kidney:0.34, Heart:0.32
+  Spleen               acc= 0.00  -> Blood:1.00
+  Tendon               acc= 0.00  -> Blood:0.99, Lens_cortex:0.01

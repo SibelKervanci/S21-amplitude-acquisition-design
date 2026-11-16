@@ -1,0 +1,14 @@
+transfer-matris doğrulaması: en iyi işaret +1, maks. fark 2.78e-16
+SVR (tek levha verisiyle) hazır
+SVR (pencere+aralıklı veriyle) hazır
+
+TEST A: veri = tek levha formülü (ters suç VAR)
+  SVR, tek levha verisiyle eğitilmiş             ε′= 4.2 σ= 3.5 | >%10: 10% | d RMSE  1.2 mm
+  SVR, çok katmanlı verisiyle eğitilmiş          ε′= 4.3 σ= 3.4 | >%10: 11% | d RMSE  1.2 mm
+  NLLS, tek levha modeli (kalınlık serbest) [93 ms] ε′= 2.5 σ= 1.9 | >%10:  7% | d RMSE  0.9 mm
+
+TEST B: veri = pencere + hava aralığı içeren çok katmanlı model (ters çözümün bilmediği; ters suç YOK)
+  SVR, tek levha verisiyle eğitilmiş             ε′= 3.7 σ= 3.5 | >%10:  9% | d RMSE  1.3 mm
+  SVR, çok katmanlı verisiyle eğitilmiş          ε′= 3.9 σ= 3.2 | >%10: 11% | d RMSE  1.3 mm
+  NLLS, tek levha modeli (kalınlık serbest) [93 ms] ε′= 2.8 σ= 2.6 | >%10:  7% | d RMSE  1.0 mm
+BİTTİ

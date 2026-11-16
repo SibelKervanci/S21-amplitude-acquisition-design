@@ -1,0 +1,9 @@
+Measured records vs simulated classes (mean over the six frequencies)
+class          n | eps inside sigma inside | eps ratio sigma ratio
+Heart         16 |        86%          86% |      0.99        0.90
+Kidney         9 |        87%          80% |      1.03        0.85
+Spleen        12 |        94%          93% |      1.02        0.90
+Liver         12 |        85%          97% |      1.02        1.01
+Muscle        11 |        85%          53% |      1.02        1.19
+Brain_grey     3 |        67%          89% |      1.03        0.94
+Brain_white    3 |        11%          44% |      0.85        0.76

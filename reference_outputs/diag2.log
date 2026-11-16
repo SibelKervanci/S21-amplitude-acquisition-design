@@ -1,0 +1,14 @@
+(a) GERÇEK ölçümler, 7 sınıf, leave-one-out doğruluk = 0.409  (n=66; şans ≈ 0.14, çoğunluk sınıfı = 0.24)
+tahmin       Brain_grey  Brain_white  Heart  Kidney  Liver  Muscle  Spleen
+gerçek                                                                    
+Brain_grey            0            0      2       1      0       0       0
+Brain_white           0            2      0       0      1       0       0
+Heart                 1            0     10       2      1       2       0
+Kidney                0            0      4       0      1       0       4
+Liver                 0            0      1       1      9       1       0
+Muscle                0            0      2       0      1       6       2
+Spleen                0            0      8       1      0       3       0
+
+(b) Cohen d, GERÇEK ölçümler (σ_eff @1 GHz ve ε′ @1 GHz):   [sentetik d: σ_eff H-K 0.83 H-S 0.19 K-S 0.85 | ε′ H-K 0.20 H-S 0.55 K-S 0.36]
+  σ_eff@1GHz  H-K=0.37  H-S=0.55  K-S=0.09  H-M=0.58  | gerçek medyanlar: Heart 1.06, Kidney 1.16, Spleen 1.13, Muscle 1.18
+  ε′@1GHz     H-K=0.09  H-S=0.11  K-S=0.01  H-M=0.14  | gerçek medyanlar: Heart 57.53, Kidney 58.76, Spleen 57.24, Muscle 56.78

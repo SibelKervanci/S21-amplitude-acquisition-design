@@ -1,0 +1,12 @@
+eğitim (17000, 111), test (306, 111); kalınlık U(10,50) mm; medyan |S21|: 0.5GHz=0.247, 3GHz=0.1177, 6GHz=0.01589
+SVR log-genlik: eğitim 7s (8000 örnek)
+SVR genlik: eğitim 4s (8000 örnek)
+NLLS, kalınlık SERBEST: 100 ms/spektrum
+NLLS, kalınlık BİLİNİYOR (oracle): 25 ms/spektrum
+
+KALINLIK BİLİNMİYOR (10-50 mm), test n=306 — medyan mutlak yüzde hata [%] (ε′ | σ_eff, 6 frekans ortalaması), %10'dan kötü olan örnek oranı, kalınlık RMSE [mm]
+yöntem                                          ε′ APE  σ_eff APE  >%10 hata  d RMSE mm
+SVR log-genlik                                     4.8        4.8        21%        1.8
+SVR genlik                                         5.8        5.9        27%        2.4
+NLLS, kalınlık SERBEST                             3.2        2.5        13%        3.0
+NLLS, kalınlık BİLİNİYOR (oracle)                  1.1        0.8         0%          -

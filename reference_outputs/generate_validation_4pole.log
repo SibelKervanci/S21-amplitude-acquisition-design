@@ -1,0 +1,56 @@
+============================================================
+4-Pole Cole-Cole Validation Dataset Generation
+Source: IT'IS Foundation V5.0 ± 20% variability
+Samples: 200/tissue × 17 tissues
+============================================================
+  Blood: 200 samples...
+  Bone_cancellous: 200 samples...
+  Bone_cortical: 200 samples...
+  Brain_grey: 200 samples...
+  Brain_white: 200 samples...
+  Fat_infiltrated: 200 samples...
+  Fat_not_infiltrated: 200 samples...
+  Heart: 200 samples...
+  Kidney: 200 samples...
+  Lens_cortex: 200 samples...
+  Liver: 200 samples...
+  Lung_inflated: 200 samples...
+  Muscle: 200 samples...
+  Skin_dry: 200 samples...
+  Skin_wet: 200 samples...
+  Spleen: 200 samples...
+  Tendon: 200 samples...
+
+Kaydedildi: D:\sibel\gabriel2\gabriel_datasets\Dataset_ITIS_4pole_validation.csv
+Toplam satır: 377,400
+Her doku: 200 örnek × 111 frekans = 22,200 satır
+Toplam örnek: 3,400
+
+Dataset Summary:
+  Tissues     : 17
+  Frequencies : 111
+  Total rows  : 377,400
+  Model       : 4-pole Cole-Cole
+  Variability : ±20%
+  Noise       : AWGN 45dB + 2% multiplicative
+
+Tissue sample counts:
+tissue
+Blood                  200
+Bone_cancellous        200
+Bone_cortical          200
+Brain_grey             200
+Brain_white            200
+Fat_infiltrated        200
+Fat_not_infiltrated    200
+Heart                  200
+Kidney                 200
+Lens_cortex            200
+Liver                  200
+Lung_inflated          200
+Muscle                 200
+Skin_dry               200
+Skin_wet               200
+Spleen                 200
+Tendon                 200
+Name: f_GHz, dtype: int64

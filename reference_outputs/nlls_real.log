@@ -1,0 +1,30 @@
+Klasik NLLS (1 kutup+σ, 4 başlangıç) — GERÇEK-türevli S21 (+gürültü), 112 spektrum, ort. 28 ms/spektrum (sandbox, 1 çekirdek)
+
+Yumuşak organlar (6 doku), medyan APE [%]  [karşılaştırma: SVR ε′ 0.8-1.3, σ_eff 0.6-1.8]:
+f      0.5  1.0  2.0  3.0  4.0  6.0
+q                                  
+ε′     2.4  1.0  1.7  1.5  1.4  1.4
+σ_eff  1.5  0.6  1.4  0.7  0.9  3.9
+
+Tüm dokular (14), medyan APE [%]:
+f      0.5  1.0  2.0  3.0  4.0  6.0
+q                                  
+ε′     2.5  1.3  1.5  1.5  1.4  1.4
+σ_eff  2.5  0.8  1.7  0.7  1.1  3.5
+
+Doku başına medyan APE:
+tissue
+Tongue              0.5
+KidneyMedula        1.0
+KidneyCortex        1.1
+BrainGreyMatter     1.3
+Spleen              1.3
+Heart               1.4
+SalivaryGland       1.5
+Liver               1.6
+Lung                1.6
+SkeletalMuscle      1.6
+Thyroid             1.6
+BrainWhiteMatter    1.7
+Pancreas            1.9
+Fat                 2.3

@@ -1,0 +1,19 @@
+eğitim 17s
+Gerçek dokular -> 17 sınıflı sentetik model -> tahminin FİZİKSEL GRUBU (Raw LR | Raw MLP | LDA16+LR), doğru grup oranı
+Heart_standard             (n=16, beklenen: yumuşak organ)    94%    92%    88%
+KidneyCortex_standard      (n= 9, beklenen: yumuşak organ)    89%    89%    91%
+Spleen_standard            (n=12, beklenen: yumuşak organ)   100%   100%   100%
+Liver_standard             (n=12, beklenen: yumuşak organ)   100%    99%   100%
+SkeletalMuscle_standard    (n=11, beklenen: yumuşak organ)   100%    97%    96%
+BrainGreyMatter_standard   (n= 3, beklenen: yumuşak organ)   100%   100%    97%
+BrainWhiteMatter_standard  (n= 3, beklenen: beyaz madde  )    30%    67%    67%
+Fat_standard               (n=12, beklenen: yağ          )   100%   100%    68%
+Lung_standard              (n=14, beklenen: akciğer      )    36%    36%    19%
+AĞIRLIKLI (9 gerçek doku grubu)                           86%    86%    79%
+
+Referans: gerçek yağ ve akciğerin 1 GHz'deki medyan ε′ / σ_eff vs sentetik sınıflar
+  gerçek Fat_standard  : ε′=   4.6  σ_eff=0.061
+  gerçek Lung_standard : ε′=  35.0  σ_eff=0.715
+  sentetik Fat_infiltrated     : ε′=  11.3  σ_eff=0.117
+  sentetik Fat_not_infiltrated : ε′=   5.5  σ_eff=0.055
+  sentetik Lung_inflated       : ε′=  22.0  σ_eff=0.484

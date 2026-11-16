@@ -1,0 +1,6 @@
+NLLS, 2 kalınlık, tam bant; model Δ=10.0 mm varsayıyor, GERÇEK Δ = 10 ± a mm (düzgün dağılım)
+  Δ belirsizliği ±0.0 mm: ε′= 1.8% σ_eff= 1.3%  >%10 hata= 0%  d1 RMSE= 0.4 mm
+  Δ belirsizliği ±0.2 mm: ε′= 1.9% σ_eff= 1.4%  >%10 hata= 1%  d1 RMSE= 0.5 mm
+  Δ belirsizliği ±0.5 mm: ε′= 2.6% σ_eff= 1.9%  >%10 hata= 3%  d1 RMSE= 0.7 mm
+  Δ belirsizliği ±1.0 mm: ε′= 4.2% σ_eff= 3.2%  >%10 hata= 9%  d1 RMSE= 1.1 mm
+  Δ belirsizliği ±2.0 mm: ε′= 8.0% σ_eff= 6.0%  >%10 hata=35%  d1 RMSE= 2.0 mm

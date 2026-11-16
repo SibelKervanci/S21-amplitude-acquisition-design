@@ -1,0 +1,34 @@
+D-optimal kümeleri optdesign.py ile uyumlu (doğrulandı)
+sentetik test n=408; SVR eğitim n=6800; gerçek-türevli test n=252 (63 kayıt)
+SVR full1 hazır
+SVR dopt12 hazır
+SVR uni12 hazır
+SVR uni6 hazır
+SVR dopt6 hazır
+SVR full2 hazır
+NLLS full1 bitti (62s)
+NLLS dopt12 bitti (52s)
+NLLS uni12 bitti (115s)
+NLLS uni6 bitti (129s)
+NLLS dopt6 bitti (83s)
+NLLS full2 bitti (83s)
+
+=== SENTETİK (n=408, spektrum bootstrap) ===  Δ = (ilk) − (ikinci); pozitif = ilk daha kötü
+  NLLS vs SVR, full band             Δmedyan APE  -1.06 [ -1.53, -0.55] | Δaşırı hata   -3.9 pp [  -7.6,  -0.2] | McNemar p_Holm 0.048 | Wilcoxon p_Holm 2.1e-06
+  NLLS vs SVR, D-opt 12              Δmedyan APE  +1.37 [ +0.73, +2.12] | Δaşırı hata  +10.0 pp [  +5.6, +14.7] | McNemar p_Holm 0.0001 | Wilcoxon p_Holm 1.3e-08
+  NLLS: uniform 12 vs D-opt 12       Δmedyan APE  +1.86 [ +0.67, +2.76] | Δaşırı hata  +18.4 pp [ +13.2, +23.8] | McNemar p_Holm 4.2e-10 | Wilcoxon p_Holm 6e-18
+  SVR: uniform 12 vs D-opt 12        Δmedyan APE  +1.42 [ +0.80, +1.79] | Δaşırı hata   +6.4 pp [  +2.9, +10.0] | McNemar p_Holm 0.0017 | Wilcoxon p_Holm 1.4e-12
+  NLLS: uniform 6 vs D-opt 6         Δmedyan APE  +5.87 [ +4.01, +8.02] | Δaşırı hata  +23.3 pp [ +17.2, +29.2] | McNemar p_Holm 6.5e-12 | Wilcoxon p_Holm 4.5e-16
+  SVR: uniform 6 vs D-opt 6          Δmedyan APE  +1.25 [ +0.61, +1.69] | Δaşırı hata   +7.8 pp [  +3.7, +12.3] | McNemar p_Holm 0.0016 | Wilcoxon p_Holm 2.1e-06
+  NLLS: 1 vs 2 thicknesses (full)    Δmedyan APE  +0.72 [ +0.52, +0.96] | Δaşırı hata   +6.1 pp [  +3.9,  +8.6] | McNemar p_Holm 3.6e-07 | Wilcoxon p_Holm 3.3e-37
+  SVR: 1 vs 2 thicknesses (full)     Δmedyan APE  +1.19 [ +0.77, +1.65] | Δaşırı hata   +6.4 pp [  +3.2,  +9.6] | McNemar p_Holm 0.00028 | Wilcoxon p_Holm 9e-21
+
+=== GERÇEK-TÜREVLİ (63 kayıt, küme bootstrap) ===  Δ = (ilk) − (ikinci); pozitif = ilk daha kötü
+  NLLS vs SVR, full band             Δmedyan APE  +0.35 [ -0.07, +0.96] | Δaşırı hata   +5.2 pp [  +0.4,  +9.9] | McNemar p_Holm 0.07 | Wilcoxon p_Holm 0.00047
+  NLLS vs SVR, D-opt 12              Δmedyan APE  +1.80 [ +1.09, +2.62] | Δaşırı hata  +16.3 pp [ +10.3, +21.8] | McNemar p_Holm 1.4e-07 | Wilcoxon p_Holm 2.5e-15
+  NLLS: uniform 12 vs D-opt 12       Δmedyan APE  +5.30 [ +2.88, +7.31] | Δaşırı hata  +27.8 pp [ +21.4, +34.5] | McNemar p_Holm 2.5e-14 | Wilcoxon p_Holm 2.8e-18
+  SVR: uniform 12 vs D-opt 12        Δmedyan APE  +0.64 [ +0.03, +1.31] | Δaşırı hata   +2.4 pp [  -0.8,  +5.6] | McNemar p_Holm 0.29 | Wilcoxon p_Holm 0.00063
+  NLLS: 1 vs 2 thicknesses (full)    Δmedyan APE  +0.96 [ +0.71, +1.54] | Δaşırı hata   +9.5 pp [  +6.0, +13.9] | McNemar p_Holm 4.8e-07 | Wilcoxon p_Holm 1.7e-23
+  SVR: 1 vs 2 thicknesses (full)     Δmedyan APE  +0.78 [ +0.48, +1.13] | Δaşırı hata   +4.4 pp [  +0.4,  +8.3] | McNemar p_Holm 0.058 | Wilcoxon p_Holm 4.3e-09
+
+BİTTİ

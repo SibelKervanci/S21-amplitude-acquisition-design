@@ -1,0 +1,42 @@
+eğitim 17s
+
+SENTETİK hold-out doğruluğu (aynı 7 sınıf, 17 sınıflı tahmin) | GERÇEK-türevli S21 (gürültülü, 17 sınıflı tahmin)
+               Raw LR    Raw SVM    Raw MLP   PCA64+RF   LDA16+LR  LDA16+SVM
+
+[sentetik]
+               Raw LR    Raw SVM    Raw MLP   PCA64+RF   LDA16+LR  LDA16+SVM
+Heart            0.41       0.30       0.33       0.36       0.45       0.39   (n=200)
+Kidney           0.69       0.68       0.72       0.71       0.66       0.74   (n=200)
+Spleen           0.54       0.57       0.73       0.71       0.74       0.72   (n=200)
+Liver            0.81       0.79       0.83       0.88       0.88       0.87   (n=200)
+Muscle           0.89       0.84       0.88       0.91       0.92       0.91   (n=200)
+Brain_grey       0.73       0.71       0.74       0.75       0.73       0.74   (n=200)
+Brain_white       0.96       0.96       0.99       0.98       0.98       0.98   (n=200)
+AĞIRLIKLI       0.716      0.694      0.747      0.758      0.765      0.764
+
+[gerçek+gürültü]
+               Raw LR    Raw SVM    Raw MLP   PCA64+RF   LDA16+LR  LDA16+SVM
+Heart            0.36       0.32       0.23       0.18       0.13       0.12   (n=16)
+Kidney           0.00       0.00       0.00       0.00       0.00       0.00   (n=9)
+Spleen           0.36       0.49       0.31       0.21       0.49       0.35   (n=12)
+Liver            0.46       0.42       0.42       0.45       0.41       0.44   (n=12)
+Muscle           0.00       0.00       0.00       0.00       0.00       0.00   (n=11)
+Brain_grey       0.10       0.08       0.25       0.07       0.40       0.35   (n=3)
+Brain_white       0.30       0.67       0.67       0.67       0.67       0.67   (n=3)
+AĞIRLIKLI       0.254      0.277      0.230      0.197      0.245      0.219
+
+[gerçek, temiz]
+               Raw LR    Raw SVM    Raw MLP   PCA64+RF   LDA16+LR  LDA16+SVM
+Heart            0.38       0.31       0.25       0.19       0.12       0.12   (n=16)
+Kidney           0.00       0.00       0.00       0.00       0.00       0.00   (n=9)
+Spleen           0.42       0.50       0.33       0.25       0.67       0.42   (n=12)
+Liver            0.50       0.42       0.42       0.42       0.50       0.50   (n=12)
+Muscle           0.00       0.00       0.00       0.00       0.00       0.00   (n=11)
+Brain_grey       0.00       0.00       0.33       0.00       0.33       0.33   (n=3)
+Brain_white       0.33       0.67       0.67       0.67       0.67       0.67   (n=3)
+AĞIRLIKLI       0.273      0.273      0.242      0.197      0.288      0.242
+
+Heart/Kidney/Spleen gerçek+gürültü: en çok verilen tahminler (Raw MLP):
+  Heart  : Muscle 37%, Heart 22%, Brain_grey 18%
+  Kidney : Muscle 64%, Spleen 25%, Lens_cortex 11%
+  Spleen : Muscle 46%, Spleen 31%, Heart 15%

@@ -1,0 +1,8 @@
+==============================================================
+4-pole physically complete dataset  (vectorized)
+==============================================================
+  train : 17,000 spectra  -> D:\sibel\gabriel2/gabriel_datasets/Dataset_4pole_train.csv
+  frekans ızgarası: 0.5 - 6.0 GHz, 111 nokta; s21_000 ... s21_110
+  hedef frekanslar (GHz): [0.5, 1.0, 2.0, 3.0, 4.0, 6.0]
+  doku başına train örnek: [1000]
+==============================================================

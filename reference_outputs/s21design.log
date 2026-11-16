@@ -1,0 +1,28 @@
+|S21| genlik, kalınlık bilinmiyor (d1 ~ U(10,40) mm); test n=204 (kayıplı %66); SVR eğitim n=6800; ε′ ve σ_eff hatası: medyan mutlak yüzde [%]
+
+=== NLLS (kalınlık serbest, 9 başlangıç) ===
+  1 kalınlık | tam bant 0.5–6 (111 nokta) ε′= 2.7 σ= 2.1 | alçak f(0.5,1)= 2.9 yüksek f(4,6)= 2.2 | >%10:  7% (kayıplı 10%, düşük  0%) | d RMSE  1.0 mm |   94 ms
+  1 kalınlık | 6 frekans (0.5,1,2,3,4,6) ε′=15.7 σ=10.3 | alçak f(0.5,1)=13.9 yüksek f(4,6)=13.5 | >%10: 61% (kayıplı 73%, düşük 38%) | d RMSE  5.6 mm |  283 ms
+  1 kalınlık | 12 frekans (0.5 adım) ε′= 8.2 σ= 5.8 | alçak f(0.5,1)= 7.8 yüksek f(4,6)= 7.0 | >%10: 37% (kayıplı 46%, düşük 19%) | d RMSE  3.5 mm |  154 ms
+  1 kalınlık | alçak bant 0.5–2 GHz  ε′= 3.3 σ= 4.6 | alçak f(0.5,1)= 3.0 yüksek f(4,6)= 6.3 | >%10: 12% (kayıplı  7%, düşük 22%) | d RMSE  0.9 mm |  124 ms
+  1 kalınlık | orta bant 2–4 GHz     ε′= 8.7 σ= 9.3 | alçak f(0.5,1)=13.7 yüksek f(4,6)= 7.8 | >%10: 55% (kayıplı 61%, düşük 43%) | d RMSE  4.5 mm |  163 ms
+  1 kalınlık | yüksek bant 4–6 GHz   ε′=36.2 σ=43.3 | alçak f(0.5,1)=48.1 yüksek f(4,6)=37.5 | >%10: 96% (kayıplı 94%, düşük 99%) | d RMSE  8.6 mm |  609 ms
+  1 kalınlık | üst bant 3–6 GHz      ε′=16.5 σ=26.2 | alçak f(0.5,1)=28.6 yüksek f(4,6)=17.3 | >%10: 82% (kayıplı 81%, düşük 84%) | d RMSE  7.5 mm |  275 ms
+  2 kalınlık (Δ=10mm) | tam bant     ε′= 1.7 σ= 1.3 | alçak f(0.5,1)= 1.8 yüksek f(4,6)= 1.5 | >%10:  1% (kayıplı  1%, düşük  0%) | d RMSE  0.5 mm |  124 ms
+  2 kalınlık (Δ=10mm) | 6 frekans    ε′= 7.2 σ= 4.6 | alçak f(0.5,1)= 5.4 yüksek f(4,6)= 6.4 | >%10: 29% (kayıplı 39%, düşük  9%) | d RMSE  2.4 mm |  183 ms
+  2 kalınlık (Δ=10mm) | yüksek bant 4–6 ε′=12.0 σ=12.3 | alçak f(0.5,1)=20.7 yüksek f(4,6)= 8.7 | >%10: 74% (kayıplı 69%, düşük 83%) | d RMSE  2.0 mm |  342 ms
+  2 kalınlık (Δ=10mm) | üst bant 3–6 ε′= 5.2 σ= 4.3 | alçak f(0.5,1)= 8.9 yüksek f(4,6)= 3.7 | >%10: 27% (kayıplı 25%, düşük 30%) | d RMSE  1.0 mm |  233 ms
+
+=== SVR (log-genlik, 6800 eğitim) ===
+  1 kalınlık | tam bant 0.5–6 (111 nokta) ε′= 4.1 σ= 3.6 | alçak f(0.5,1)= 3.7 yüksek f(4,6)= 4.0 | >%10: 11% (kayıplı 11%, düşük 12%) | d RMSE  1.2 mm
+  1 kalınlık | 6 frekans (0.5,1,2,3,4,6) ε′= 5.9 σ= 5.1 | alçak f(0.5,1)= 5.3 yüksek f(4,6)= 5.8 | >%10: 22% (kayıplı 19%, düşük 29%) | d RMSE  1.9 mm
+  1 kalınlık | 12 frekans (0.5 adım) ε′= 6.1 σ= 5.0 | alçak f(0.5,1)= 5.3 yüksek f(4,6)= 5.8 | >%10: 20% (kayıplı 23%, düşük 14%) | d RMSE  1.6 mm
+  1 kalınlık | alçak bant 0.5–2 GHz  ε′= 3.9 σ= 4.0 | alçak f(0.5,1)= 3.5 yüksek f(4,6)= 4.4 | >%10: 11% (kayıplı  8%, düşük 16%) | d RMSE  1.2 mm
+  1 kalınlık | orta bant 2–4 GHz     ε′= 8.8 σ=10.1 | alçak f(0.5,1)= 9.3 yüksek f(4,6)=10.0 | >%10: 49% (kayıplı 38%, düşük 70%) | d RMSE  4.2 mm
+  1 kalınlık | yüksek bant 4–6 GHz   ε′=12.4 σ=13.5 | alçak f(0.5,1)=12.4 yüksek f(4,6)=13.3 | >%10: 63% (kayıplı 53%, düşük 83%) | d RMSE  4.7 mm
+  1 kalınlık | üst bant 3–6 GHz      ε′=10.6 σ=12.0 | alçak f(0.5,1)=10.9 yüksek f(4,6)=11.8 | >%10: 56% (kayıplı 48%, düşük 71%) | d RMSE  4.4 mm
+  2 kalınlık (Δ=10mm) | tam bant     ε′= 2.6 σ= 2.0 | alçak f(0.5,1)= 2.1 yüksek f(4,6)= 2.4 | >%10:  4% (kayıplı  1%, düşük 10%) | d RMSE  0.6 mm
+  2 kalınlık (Δ=10mm) | 6 frekans    ε′= 4.8 σ= 3.4 | alçak f(0.5,1)= 3.8 yüksek f(4,6)= 4.5 | >%10: 11% (kayıplı 10%, düşük 14%) | d RMSE  1.1 mm
+  2 kalınlık (Δ=10mm) | yüksek bant 4–6 ε′=10.2 σ= 6.8 | alçak f(0.5,1)= 9.4 yüksek f(4,6)= 8.2 | >%10: 46% (kayıplı 30%, düşük 75%) | d RMSE  1.5 mm
+  2 kalınlık (Δ=10mm) | üst bant 3–6 ε′= 8.0 σ= 4.9 | alçak f(0.5,1)= 7.2 yüksek f(4,6)= 6.3 | >%10: 28% (kayıplı 19%, düşük 48%) | d RMSE  1.1 mm
+BİTTİ
